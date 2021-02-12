@@ -15,9 +15,9 @@ COL_NAMESPACE_BEGIN
 
 MAPS_NAMESPACE_BEGIN
 
-inline const std::array<std::array<float, 3>, 256>& coolwarm()
+inline const Map coolwarm()
 {
-    const static std::array<std::array<float, 3>, 256> ret = {{
+    const static std::remove_reference_t<Map> ret = {{
         {0.229904f, 0.298777f, 0.753674f},
         {0.234418f, 0.305645f, 0.759890f},
         {0.238947f, 0.312500f, 0.766044f},

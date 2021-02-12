@@ -29,9 +29,9 @@ MAPS_NAMESPACE_BEGIN
 
 SRGB_NAMESPACE_BEGIN
 
-inline const std::array<std::array<float, 3>, 256>& plasma()
+inline const Map plasma()
 {
-    const static std::array<std::array<float, 3>, 256> ret = {{
+    const static std::remove_reference_t<Map> ret = {{
         {0.050383f, 0.029803f, 0.527975f},
         {0.063536f, 0.028426f, 0.533124f},
         {0.075353f, 0.027206f, 0.538007f},

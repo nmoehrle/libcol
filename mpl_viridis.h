@@ -31,9 +31,9 @@ MAPS_NAMESPACE_BEGIN
 
 SRGB_NAMESPACE_BEGIN
 
-inline const std::array<std::array<float, 3>, 256>& viridis()
+inline const Map viridis()
 {
-    const static std::array<std::array<float, 3>, 256> ret = {{
+    const static std::remove_reference_t<Map> ret = {{
         {0.267004f, 0.004874f, 0.329415f},
         {0.26851f, 0.009605f, 0.335427f},
         {0.269944f, 0.014625f, 0.341379f},
@@ -300,9 +300,9 @@ LIN_NAMESPACE_BEGIN
 
 /* Above values converted with colorspacious to sRGB1-linear. */
 
-inline std::array<std::array<float, 3>, 256>& viridis()
+inline Map viridis()
 {
-    static std::array<std::array<float, 3>, 256> ret = {{
+    static std::remove_reference_t<Map> ret = {{
         {0.057951f, 0.000377245f, 0.0886574f},
         {0.0586036f, 0.000743421f, 0.0920216f},
         {0.059229f, 0.00113197f, 0.0954244f},

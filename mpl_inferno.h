@@ -29,9 +29,9 @@ MAPS_NAMESPACE_BEGIN
 
 SRGB_NAMESPACE_BEGIN
 
-inline const std::array<std::array<float, 3>, 256>& inferno()
+inline const Map inferno()
 {
-    const static std::array<std::array<float, 3>, 256> ret = {{
+    const static std::remove_reference_t<Map> ret = {{
         {0.001462f, 0.000466f, 0.013866f},
         {0.002267f, 0.00127f, 0.01857f},
         {0.003299f, 0.002249f, 0.024239f},
