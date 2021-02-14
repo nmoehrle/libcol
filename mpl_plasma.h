@@ -29,7 +29,7 @@ MAPS_NAMESPACE_BEGIN
 
 SRGB_NAMESPACE_BEGIN
 
-inline const Map plasma()
+inline Map plasma()
 {
     const static std::remove_reference_t<Map> ret = {{
         {0.050383f, 0.029803f, 0.527975f},

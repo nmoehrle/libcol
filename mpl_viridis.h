@@ -31,7 +31,7 @@ MAPS_NAMESPACE_BEGIN
 
 SRGB_NAMESPACE_BEGIN
 
-inline const Map viridis()
+inline Map viridis()
 {
     const static std::remove_reference_t<Map> ret = {{
         {0.267004f, 0.004874f, 0.329415f},

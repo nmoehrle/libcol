@@ -15,7 +15,7 @@ COL_NAMESPACE_BEGIN
 
 MAPS_NAMESPACE_BEGIN
 
-inline const Map coolwarm()
+inline Map coolwarm()
 {
     const static std::remove_reference_t<Map> ret = {{
         {0.229904f, 0.298777f, 0.753674f},
